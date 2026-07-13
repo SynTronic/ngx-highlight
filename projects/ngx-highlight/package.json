@@ -1,0 +1,33 @@
+{
+  "name": "@syntronic/ngx-highlight",
+  "version": "1.0.0",
+  "description": "Angular directives for highlighting search matches using the native CSS Custom Highlight API — no DOM mutation, works across nested text nodes, supports multiple independent named searches within one group.",
+  "keywords": [
+    "angular",
+    "highlight",
+    "css-highlight-api",
+    "search",
+    "directive"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SynTronic/ngx-highlight.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SynTronic/ngx-highlight/issues"
+  },
+  "homepage": "https://github.com/SynTronic/ngx-highlight#readme",
+  "author": "SynTronic",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@angular/common": "^22.0.0",
+    "@angular/core": "^22.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

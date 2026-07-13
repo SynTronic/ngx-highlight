@@ -6,5 +6,37 @@
   },
   "newProjectRoot": "projects",
   "projects": {
+    "ngx-highlight": {
+      "projectType": "library",
+      "root": "projects/ngx-highlight",
+      "sourceRoot": "projects/ngx-highlight/src",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-highlight/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-highlight/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@analogjs/vitest-angular:test",
+          "options": {
+            "configFile": "vite.config.mts"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/ngx-highlight/src/**/*.ts"]
+          }
+        }
+      }
+    }
   }
 }
